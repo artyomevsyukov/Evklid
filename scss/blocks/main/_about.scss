@@ -1,0 +1,116 @@
+.about {
+    margin-bottom: 100px;
+}
+
+.about__title {
+    margin-bottom: 20px;
+}
+.about__desc {
+    max-width: 1235px;
+    margin-bottom: 50px;
+
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+
+    color: #333333;
+}
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+    // grid-auto-rows: minmax(100px auto);
+    grid-row: 295px;
+}
+.about-grid__item1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    display: flex;
+}
+.about-item1 {
+    position: relative;
+}
+.about-item1:hover .about-item1__info {
+    display: flex;
+    transition: 0.5s display ease-in;
+}
+.about-item1__info {
+    width: 100%;
+    padding: 50px;
+    position: absolute;
+    bottom: 0;
+    // display: flex;
+    display: none;
+    background: rgba(0, 0, 0, 0.5);
+    transition: 0.5s display ease-in;
+}
+.about-item1__desc {
+    max-width: 454px;
+    margin-right: 139px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 32px;
+
+    color: #ffffff;
+}
+.about-item1__right {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    line-height: 20px;
+    color: #ffffff;
+}
+.about-item1__link {
+    border: 3px solid #ff9900;
+    padding: 20px 38px;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+
+    color: #ffffff;
+}
+
+.about-grid__item2 {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+}
+.about-card {
+    display: flex;
+    padding: 65px 118px 65px 60px;
+}
+.about-card__left {
+    flex: 0 0 190px;
+    margin-right: 50px;
+}
+.about-card__img {
+}
+.about-card__right {
+}
+.about-item {
+}
+.about-card__title {
+    margin-bottom: 8px;
+}
+.about-card__desc {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+}
+.about-grid__item3 {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+}
+.about-item3 {
+}
+.about-item3__left {
+}
+.about-item3__right {
+}
