@@ -1,0 +1,88 @@
+.how-we-work {
+    margin-bottom: 100px;
+}
+
+.how-we-work__title {
+    margin-bottom: 50px;
+}
+.how-we-work__steps {
+}
+.work-steps {
+}
+.work-steps-list {
+    display: flex;
+    gap: 85px;
+    margin-bottom: 55px;
+}
+.work-steps__item {
+}
+.work-steps__link {
+    display: inline-block;
+    padding: 5px;
+}
+.work-steps__item1 {
+}
+.work-steps-tab {
+    display: flex;
+}
+.tabs-1 {
+}
+.work-steps-tab__left {
+    // display: flex;
+    // flex-direction: column;
+    margin-right: 142px;
+}
+.work-steps-tab__title {
+    margin-bottom: 8px;
+}
+.work-steps-tab__desc {
+    max-width: 768px;
+    line-height: 32px;
+    margin: auto 0 0 0;
+}
+.work-card__wrap-link {
+    // display: flex;
+    // justify-content: flex-end;
+}
+.work-card__link {
+}
+.work-card__right {
+}
+.work-card__img {
+    width: 870px;
+    height: 460px;
+}
+.work-steps__item2 {
+}
+.tabs-2 {
+}
+.work-steps__item3 {
+}
+.tabs-3 {
+}
+.work-steps__item4 {
+}
+.tabs-4 {
+}
+
+.ui-tab a {
+    color: rgba(51, 51, 51, 1);
+}
+// .ui-tab:hover a {
+//     color: rgba(51, 51, 51, 1);
+// }
+
+.ui-tabs-active a {
+    color: rgba(225, 103, 14, 1);
+}
+
+.ui-state-hover a {
+    color: rgba(255, 153, 0, 1);
+}
+
+.ui-state-focus:focus a {
+    outline: 2px solid #ff9900;
+}
+// .work-steps__link:focus a {
+//     outline: 2px solid #ff9900;
+// }
