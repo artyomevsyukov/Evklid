@@ -26,6 +26,11 @@
         <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
         <meta name="msapplication-TileColor" content="#da532c" />
         <meta name="theme-color" content="#ffffff" />
+
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+        />
         <!-- <link rel="stylesheet" href="./lib/jquery-ui.structure.css" /> -->
         <link rel="stylesheet" href="./css/main.css" />
     </head>
@@ -60,6 +65,89 @@
         </header>
         <!-- /.header -->
         <main class="main">
+            <section class="hero">
+                <div class="container">
+                    <!-- Swiper -->
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <picture>
+                                    <source
+                                        type="image/webp"
+                                        srcset="
+                                            ./img/main/hero/1.webp    1x,
+                                            ./img/main/hero/1@2x.webp 2x
+                                        "
+                                    />
+                                    <img
+                                        class="about-item1__img"
+                                        alt="Slide 1"
+                                        src="./img/main/hero/1.jpg"
+                                        srcset="
+                                            ./img/main/hero/1.jpg    1x,
+                                            ./img/main/hero/1@2x.jpg 2x
+                                        "
+                                    />
+                                </picture>
+                            </div>
+                            <div class="swiper-slide">
+                                <picture>
+                                    <source
+                                        type="image/webp"
+                                        srcset="
+                                            ./img/main/hero/2.webp    1x,
+                                            ./img/main/hero/2@2x.webp 2x
+                                        "
+                                    />
+                                    <img
+                                        class="about-item1__img"
+                                        alt="Slide 2"
+                                        src="./img/main/hero/2.jpg"
+                                        srcset="
+                                            ./img/main/hero/2.jpg    1x,
+                                            ./img/main/hero/2@2x.jpg 2x
+                                        "
+                                    />
+                                </picture>
+                            </div>
+                            <div class="swiper-slide">
+                                <picture>
+                                    <source
+                                        type="image/webp"
+                                        srcset="
+                                            ./img/main/hero/3.webp    1x,
+                                            ./img/main/hero/3@2x.webp 2x
+                                        "
+                                    />
+                                    <img
+                                        class="about-item1__img"
+                                        alt="Slide 3"
+                                        src="./img/main/hero/3.jpg"
+                                        srcset="
+                                            ./img/main/hero/3.jpg    1x,
+                                            ./img/main/hero/3@2x.jpg 2x
+                                        "
+                                    />
+                                </picture>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <div class="hero-wrap">
+                            <h1 class="hero___title title1">
+                                Проектные решения любой сложности
+                            </h1>
+                            <div class="hero__subtitle title3">
+                                Есть над чем задуматься: базовые сценарии
+                                поведения пользователей и по сей день остаются
+                                уделом проектантов
+                            </div>
+                            <a href="#1" class="hero__order-link"
+                                >Заказать расчёт</a
+                            >
+                        </div>
+                    </div>
+                </div>
+            </section>
             <section class="about" id="about">
                 <div class="container">
                     <h2 class="title2 about__title">О нас</h2>
@@ -95,8 +183,8 @@
                                     alt="Рабочий забивает гвоздь"
                                     src="./img/main/about/about.jpg"
                                     srcset="
-                                        ./img/main/about/about.jpg        1x,
-                                        ./img/main/about/about.jpg@2x.jpg 2x
+                                        ./img/main/about/about.jpg    1x,
+                                        ./img/main/about/about@2x.jpg 2x
                                     "
                                 />
                             </picture>
@@ -689,6 +777,7 @@
             </div>
         </footer>
         <!-- /.footer -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
         <script src="./lib/jquery-3.6.4.min.js"></script>
         <script src="./lib/jquery-ui.min.js"></script>
         <script src="./js/main.js"></script>
