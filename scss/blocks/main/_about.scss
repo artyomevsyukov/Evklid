@@ -34,9 +34,13 @@
 .about-item1 {
     position: relative;
 }
-.about-item1:hover .about-item1__info {
-    display: flex;
+// .about-item1:hover .about-item1__info {
+//     display: flex;
+//     transition: 0.5s display ease-in;
+// }
+.about-item1:hover .about-item1__link {
     transition: 0.5s display ease-in;
+    background-color: var(--hoverColorOrange);
 }
 .about-item1__img {
     width: 100%;
@@ -47,8 +51,8 @@
     padding: 50px;
     position: absolute;
     bottom: 0;
-    // display: flex;
-    display: none;
+    display: flex;
+    // display: none;
     background: rgba(0, 0, 0, 0.5);
     transition: 0.5s display ease-in;
 }
@@ -78,6 +82,12 @@
     text-align: center;
 
     color: #ffffff;
+    &:focus {
+        background-color: var(--hoverColorOrange);
+    }
+    &:active {
+        background-color: var(--activeColorOrange) !important;
+    }
 }
 
 .about-grid__item2 {

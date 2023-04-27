@@ -15,19 +15,49 @@
     margin-right: 85px;
 }
 .nav {
+    margin: auto 85px auto 0;
 }
 .nav__list {
     display: flex;
     gap: 85px;
 }
 .nav__item {
+    display: inline-block;
+
+    padding: 5px;
+    &:hover a {
+        border-bottom: 2px solid #ff9900;
+    }
 }
 .nav__link {
+    display: inline-block;
+    box-sizing: border-box;
+
     font-weight: 600;
     font-size: 18px;
     line-height: 22px;
 
     color: #333333;
+
+    border: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s ease-in;
+    transition: border 0.2s ease-in;
+    // transition: color 0.2s ease-in;
+
+    &:hover {
+        border-bottom: 2px solid #ff9900;
+    }
+    &:focus {
+        border: 2px solid #ff9900;
+    }
+    &:active {
+        color: #e1670e;
+        border: 2px solid transparent;
+
+        border-bottom: 2px solid #e1670e;
+    }
 }
 .header-search {
+    margin: auto 0;
 }

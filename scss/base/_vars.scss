@@ -48,7 +48,7 @@ $accent-color: #49a144;
 //   --textWhite: #fff;
 
 :root {
-    --accent-color: #{$accent-color};
+    // --accent-color: #{$accent-color};
 
     --container--laptop: #{$container--laptop};
     --container--tablet: #{$container--tablet};
@@ -59,4 +59,13 @@ $accent-color: #49a144;
     --breakpoint--laptop: #{$breakpoint--laptop};
     --breakpoint--tablet: #{$breakpoint--tablet};
     --breakpoint--mobile: #{$breakpoint--mobile};
+
+    // -hoverColor:rgba(255, 153, 0, 1);
+
+    // --focusColor:
+    // --activeColor:
+
+    --hoverColorOrange: rgba(255, 153, 0, 0.7);
+    --focusColorOrange: #ff9900;
+    --activeColorOrange: #e1670e;
 }

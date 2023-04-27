@@ -46,34 +46,34 @@ body {
 
 // links ======================================
 // ui-social
-.link {
-    &:hover {
-        color: var(--hoverColor);
-    }
-    &:focus {
-        color: var(--focusColor);
-        outline: 1px solid var(--focusColor);
-    }
-    &:active {
-        color: var(--activeColor);
-    }
-}
-.link_o {
-    color: #cc9933;
-    &:hover {
-        color: var(--focusColorDefault);
-    }
-    &:focus {
-        outline: 1px solid var(--focusColorDefault);
-    }
-}
-.link_d:hover::before {
-    color: var(--focusColorDefault);
-}
-.link_d:focus::before {
-    // color: var(--focusColorDefault);
-    outline: 1px solid var(--focusColorDefault);
-}
+// .link {
+//     &:hover {
+//         color: var(--hoverColor);
+//     }
+//     &:focus {
+//         color: var(--focusColor);
+//         outline: 1px solid var(--focusColor);
+//     }
+//     &:active {
+//         color: var(--activeColor);
+//     }
+// }
+// .link_o {
+//     color: #cc9933;
+//     &:hover {
+//         color: var(--focusColorDefault);
+//     }
+//     &:focus {
+//         outline: 1px solid var(--focusColorDefault);
+//     }
+// }
+// .link_d:hover::before {
+//     color: var(--focusColorDefault);
+// }
+// .link_d:focus::before {
+//     // color: var(--focusColorDefault);
+//     outline: 1px solid var(--focusColorDefault);
+// }
 
 // .link_dd {
 //     color: var(--activeColor);
