@@ -6,3 +6,5 @@ $(function () {
         heightStyle: "content",
     });
 });
+
+// ui-accordion-header-active

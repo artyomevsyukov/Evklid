@@ -1,6 +1,10 @@
 .accordion {
     margin-bottom: 100px;
 }
+.accordion:last-child {
+    border-bottom: 1px solid #cacaca;
+}
+
 .questions__title {
     margin-bottom: 32px;
 }
@@ -9,9 +13,6 @@
     display: flex;
     align-items: center;
     border-top: 1px solid #cacaca;
-}
-.accordion__desc:last-child {
-    border-bottom: 1px solid #cacaca;
 }
 
 .accordion__title {
