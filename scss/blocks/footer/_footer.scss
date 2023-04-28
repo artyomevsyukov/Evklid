@@ -42,11 +42,18 @@
 
 .footer-social {
     display: flex;
-    gap: 25px;
+    gap: 15px;
 }
 .footer-social__link {
+    // display: inline-block;
+    // box-sizing: content-box;
+    // padding: 15px;
+    // border: 2px solid transparent;
 }
 .footer-social__img {
+    display: inline-block;
+    box-sizing: content-box;
+    padding: 5px;
 }
 .footer-center {
 }
@@ -62,4 +69,22 @@
     font-size: 16px;
     line-height: 32px;
     color: #cacaca;
+}
+
+// svg
+.footer-social__img {
+    fill: #7c7c7c;
+    &:hover {
+        fill: #ff9900;
+    }
+}
+
+.footer-social__link:focus .footer-social__img {
+    fill: #7c7c7c;
+
+    outline: 2px solid #ff9900;
+}
+.footer-social__link:active .footer-social__img {
+    fill: #e1670e;
+    outline: 2px solid transparent;
 }

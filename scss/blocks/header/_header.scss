@@ -61,3 +61,38 @@
 .header-search {
     margin: auto 0;
 }
+
+// svg==========================
+
+.header-search__link {
+    display: inline-block;
+    box-sizing: content-box;
+    padding: 2px 2px 0 2px;
+
+    rect {
+        fill: #333333;
+    }
+    path {
+        stroke: #333333;
+    }
+    &:hover {
+        rect {
+            fill: #ff9900;
+        }
+        path {
+            stroke: #ff9900;
+        }
+    }
+    &:focus {
+        outline: 2px solid #ff9900;
+    }
+    &:active {
+        outline: 2px solid transparent;
+        rect {
+            fill: #e1670e;
+        }
+        path {
+            stroke: #e1670e;
+        }
+    }
+}
