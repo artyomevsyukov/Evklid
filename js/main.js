@@ -16,4 +16,7 @@ var swiper = new Swiper(".mySwiper", {
         el: ".swiper-pagination",
         dynamicBullets: true,
     },
+    autoplay: {
+        delay: 5000,
+    },
 });
