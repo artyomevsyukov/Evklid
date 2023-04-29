@@ -157,12 +157,15 @@ legend {
   --container--mobile: 308px;
   --breakpoint--4k: 1921px;
   --breakpoint--desktop: 1920px;
-  --breakpoint--laptop: 1124px;
+  --breakpoint--laptop: 1024px;
   --breakpoint--tablet: 769px;
   --breakpoint--mobile: 320px;
   --hoverColorOrange: rgba(255, 153, 0, 0.7);
   --focusColorOrange: #ff9900;
   --activeColorOrange: #e1670e;
+  --myColor1: #000;
+  --myColor2: #ff9900;
+  --myColor3: #e1670e;
 }
 
 html,
@@ -205,6 +208,7 @@ body {
 }
 
 .header {
+  position: relative;
   margin: 0 auto;
   padding: 14px 77px 14px 75px;
   max-width: 1920px;
@@ -219,7 +223,214 @@ body {
   background: #e5e5e5;
 }
 
-.header-left {
+.header-burger {
+  display: none;
+}
+
+.burger {
+  --myColor1: #000;
+  --myColor2: #ff9900;
+  --myColor3: #e1670e;
+  width: 30px;
+  height: 23px;
+  cursor: pointer;
+  transition: --myColor1 2s linear, --myColor2 3s linear;
+}
+.burger .burger1 {
+  width: 30px;
+  height: 3px;
+  background: -webkit-gradient(linear, left top, right top, from(var(--myColor1)), to(var(--myColor1)));
+  background: linear-gradient(90deg, var(--myColor1) 0%, var(--myColor1) 100%);
+}
+.burger .burger2 {
+  width: 30px;
+  height: 7px;
+}
+.burger .burger3 {
+  width: 30px;
+  height: 3px;
+  background: -webkit-gradient(linear, left top, right top, from(var(--myColor1)), to(var(--myColor1)));
+  background: linear-gradient(90deg, var(--myColor1) 0%, var(--myColor1) 100%);
+}
+.burger .burger4 {
+  width: 30px;
+  height: 7px;
+}
+.burger .burger5 {
+  width: 30px;
+  height: 3px;
+  background: -webkit-gradient(linear, left top, right top, from(var(--myColor1)), to(var(--myColor1)));
+  background: linear-gradient(90deg, var(--myColor1) 0%, var(--myColor1) 100%);
+}
+.burger:hover .burger1 {
+  width: 30px;
+  height: 3px;
+  background: -webkit-gradient(linear, left top, right top, from(var(--myColor2)), to(var(--myColor2)));
+  background: linear-gradient(90deg, var(--myColor2) 0%, var(--myColor2) 100%);
+}
+.burger:hover .burger2 {
+  width: 30px;
+  height: 7px;
+}
+.burger:hover .burger3 {
+  width: 30px;
+  height: 3px;
+  background: -webkit-gradient(linear, left top, right top, color-stop(16.3%, transparent), color-stop(16.4%, var(--myColor2)));
+  background: linear-gradient(90deg, transparent 16.3%, var(--myColor2) 16.4%);
+}
+.burger:hover .burger4 {
+  width: 30px;
+  height: 7px;
+}
+.burger:hover .burger5 {
+  width: 30px;
+  height: 3px;
+  background: -webkit-gradient(linear, left top, right top, color-stop(40%, transparent), color-stop(41%, var(--myColor2)));
+  background: linear-gradient(90deg, transparent 40%, var(--myColor2) 41%);
+}
+.burger:active .burger1 {
+  width: 30px;
+  height: 3px;
+  background: -webkit-gradient(linear, left top, right top, from(var(--myColor3)), to(var(--myColor3)));
+  background: linear-gradient(90deg, var(--myColor3) 0%, var(--myColor3) 100%);
+}
+.burger:active .burger2 {
+  width: 30px;
+  height: 7px;
+}
+.burger:active .burger3 {
+  width: 30px;
+  height: 3px;
+  background: -webkit-gradient(linear, left top, right top, color-stop(16.3%, transparent), color-stop(16.4%, var(--myColor3)));
+  background: linear-gradient(90deg, transparent 16.3%, var(--myColor3) 16.4%);
+}
+.burger:active .burger4 {
+  width: 30px;
+  height: 7px;
+}
+.burger:active .burger5 {
+  width: 30px;
+  height: 3px;
+  background: -webkit-gradient(linear, left top, right top, color-stop(40%, transparent), color-stop(41%, var(--myColor3)));
+  background: linear-gradient(90deg, transparent 40%, var(--myColor3) 41%);
+}
+
+.burger.open {
+  --myColor1: #000;
+  --myColor2: #ff9900;
+  --myColor3: #e1670e;
+  width: 30px;
+  height: 23px;
+  cursor: pointer;
+}
+.burger.open .burger1 {
+  width: 30px;
+  height: 3px;
+  background: -webkit-gradient(linear, left top, right top, from(var(--myColor1)), to(var(--myColor1)));
+  background: linear-gradient(90deg, var(--myColor1) 0%, var(--myColor1) 100%);
+}
+.burger.open .burger2 {
+  width: 30px;
+  height: 7px;
+}
+.burger.open .burger3 {
+  width: 30px;
+  height: 3px;
+  background: -webkit-gradient(linear, left top, right top, color-stop(16.3%, transparent), color-stop(16.4%, var(--myColor1)));
+  background: linear-gradient(90deg, transparent 16.3%, var(--myColor1) 16.4%);
+}
+.burger.open .burger4 {
+  width: 30px;
+  height: 7px;
+}
+.burger.open .burger5 {
+  width: 30px;
+  height: 3px;
+  background: -webkit-gradient(linear, left top, right top, color-stop(40%, transparent), color-stop(41%, var(--myColor1)));
+  background: linear-gradient(90deg, transparent 40%, var(--myColor1) 41%);
+}
+.burger.open:hover .burger1 {
+  width: 30px;
+  height: 3px;
+  background: -webkit-gradient(linear, left top, right top, from(var(--myColor2)), to(var(--myColor2)));
+  background: linear-gradient(90deg, var(--myColor2) 0%, var(--myColor2) 100%);
+}
+.burger.open:hover .burger2 {
+  width: 30px;
+  height: 7px;
+}
+.burger.open:hover .burger3 {
+  width: 30px;
+  height: 3px;
+  background: -webkit-gradient(linear, left top, right top, color-stop(16.3%, transparent), color-stop(16.4%, var(--myColor2)));
+  background: linear-gradient(90deg, transparent 16.3%, var(--myColor2) 16.4%);
+}
+.burger.open:hover .burger4 {
+  width: 30px;
+  height: 7px;
+}
+.burger.open:hover .burger5 {
+  width: 30px;
+  height: 3px;
+  background: -webkit-gradient(linear, left top, right top, color-stop(40%, transparent), color-stop(41%, var(--myColor2)));
+  background: linear-gradient(90deg, transparent 40%, var(--myColor2) 41%);
+}
+.burger.open:active .burger1 {
+  width: 30px;
+  height: 3px;
+  background: -webkit-gradient(linear, left top, right top, from(var(--myColor3)), to(var(--myColor3)));
+  background: linear-gradient(90deg, var(--myColor3) 0%, var(--myColor3) 100%);
+}
+.burger.open:active .burger2 {
+  width: 30px;
+  height: 7px;
+}
+.burger.open:active .burger3 {
+  width: 30px;
+  height: 3px;
+  background: -webkit-gradient(linear, left top, right top, color-stop(16.3%, transparent), color-stop(16.4%, var(--myColor3)));
+  background: linear-gradient(90deg, transparent 16.3%, var(--myColor3) 16.4%);
+}
+.burger.open:active .burger4 {
+  width: 30px;
+  height: 7px;
+}
+.burger.open:active .burger5 {
+  width: 30px;
+  height: 3px;
+  background: -webkit-gradient(linear, left top, right top, color-stop(40%, transparent), color-stop(41%, var(--myColor3)));
+  background: linear-gradient(90deg, transparent 40%, var(--myColor3) 41%);
+}
+
+.menu {
+  position: absolute;
+  z-index: 99;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #38332c;
+  -webkit-transition: -webkit-transform 0.3s ease-in;
+  transition: -webkit-transform 0.3s ease-in;
+  transition: transform 0.3s ease-in;
+  transition: transform 0.3s ease-in, -webkit-transform 0.3s ease-in;
+  -webkit-transform: translateX(-101%);
+          transform: translateX(-101%);
+}
+
+.burger.open .menu {
+  -webkit-transform: none;
+          transform: none;
+}
+
+.menu.open {
+  -webkit-transform: none;
+          transform: none;
+}
+
+.header-logo {
   margin: 0 auto 0 0;
 }
 
@@ -308,6 +519,25 @@ body {
   stroke: #e1670e;
 }
 
+@media (max-width: 1024px) {
+  .header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .header-logo {
+    margin: initial;
+  }
+  .header-burger {
+    display: block;
+  }
+  .header-nav {
+    display: none;
+  }
+}
 .hero {
   margin-bottom: 100px;
 }
@@ -321,7 +551,7 @@ body {
   position: absolute;
   top: 100px;
   left: 80px;
-  z-index: 200;
+  z-index: 10;
 }
 
 .hero___title {
@@ -353,15 +583,10 @@ body {
   background-color: rgb(225, 103, 14);
 }
 
-.swiper {
-  width: 1770px;
-  height: 620px;
-}
-
 .swiper-slide img {
+  max-width: 1770px;
+  min-height: 620px;
   display: block;
-  width: 100%;
-  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }

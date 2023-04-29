@@ -4,7 +4,7 @@ $container--mobile: 308px;
 
 $breakpoint--4k: 1921px;
 $breakpoint--desktop: 1920px;
-$breakpoint--laptop: 1124px;
+$breakpoint--laptop: 1024px;
 $breakpoint--tablet: 769px;
 $breakpoint--mobile: 320px;
 
@@ -68,4 +68,8 @@ $accent-color: #49a144;
     --hoverColorOrange: rgba(255, 153, 0, 0.7);
     --focusColorOrange: #ff9900;
     --activeColorOrange: #e1670e;
+
+    --myColor1: #000;
+    --myColor2: #ff9900;
+    --myColor3: #e1670e;
 }

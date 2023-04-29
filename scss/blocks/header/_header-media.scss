@@ -1,3 +1,18 @@
+@include laptop {
+    .header {
+        display: flex;
+        justify-content: space-between;
+    }
+    .header-logo {
+        margin: initial;
+    }
+    .header-burger {
+        display: block;
+    }
+    .header-nav {
+        display: none;
+    }
+}
 @include tablet {
 }
 @include mobile {
