@@ -870,7 +870,57 @@
                     </div>
                 </div>
                 <div class="footer-center">
-                    <h2 class="footer-centr__titile title2">Оставить заявку</h2>
+                    <form class="footer-form form" action="#form" method="post">
+                        <h2 class="footer-center__titile title2">
+                            Оставить заявку
+                        </h2>
+                        <fieldset>
+                            <label class="none" for="name"></label>
+                            <input
+                                class="form__label form__input"
+                                id="name"
+                                placeholder="Фамилия, имя и отчество*"
+                                required
+                            /><br />
+                            <label for="email"></label>
+                            <input
+                                class="form__label form__input"
+                                id="email"
+                                placeholder="E-mail*"
+                                required
+                            /><br />
+                            <label for="comments"></label>
+                            <textarea
+                                class="form__label form__textarea"
+                                id="comments"
+                                placeholder="Сообщение"
+                            ></textarea>
+                            <div class="form-row">
+                                <!-- <input
+                                    
+                                /> -->
+                                <button
+                                    class="form__btn"
+                                    type="submit"
+                                    value="Отправить данные"
+                                >
+                                    Отправить данные
+                                </button>
+
+                                <label for="agree"
+                                    ><input
+                                        class="form__checbox"
+                                        id="agree"
+                                        type="checkbox"
+                                        name="agree"
+                                        checked
+                                        required
+                                    />
+                                    Согласен на обработку данных</label
+                                >
+                            </div>
+                        </fieldset>
+                    </form>
                 </div>
                 <div class="footer-right">
                     Высокий уровень вовлечения представителей целевой аудитории
