@@ -252,17 +252,32 @@
 }
 
 .menu {
+    padding: 45px;
     position: absolute;
-    z-index: 99;
-    width: 100vw;
-    height: 100vh;
-    top: 0;
+    z-index: 5;
+
+    top: 100px;
     left: 0;
     right: 0;
     bottom: 0;
     background-color: #38332c;
     transition: transform 0.3s ease-in;
     transform: translateX(-101%);
+
+    &__item {
+        margin-bottom: 35px;
+    }
+    &__link {
+        text-align: center;
+        color: #fff;
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 59px;
+    }
+}
+
+.menu__list {
+    z-index: 99;
 }
 
 .burger.open .menu {
@@ -271,6 +286,7 @@
 .menu.open {
     transform: none;
 }
+
 .header-logo {
     margin: 0 auto 0 0;
 }

@@ -1,4 +1,7 @@
 @include laptop {
+    .header-menu.none {
+        display: block !important;
+    }
     .header {
         display: flex;
         justify-content: space-between;

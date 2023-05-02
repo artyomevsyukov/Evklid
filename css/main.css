@@ -403,11 +403,10 @@ body {
 }
 
 .menu {
+  padding: 45px;
   position: absolute;
-  z-index: 99;
-  width: 100vw;
-  height: 100vh;
-  top: 0;
+  z-index: 5;
+  top: 100px;
   left: 0;
   right: 0;
   bottom: 0;
@@ -418,6 +417,20 @@ body {
   transition: transform 0.3s ease-in, -webkit-transform 0.3s ease-in;
   -webkit-transform: translateX(-101%);
           transform: translateX(-101%);
+}
+.menu__item {
+  margin-bottom: 35px;
+}
+.menu__link {
+  text-align: center;
+  color: #fff;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 59px;
+}
+
+.menu__list {
+  z-index: 99;
 }
 
 .burger.open .menu {
@@ -520,6 +533,9 @@ body {
 }
 
 @media (max-width: 1024px) {
+  .header-menu.none {
+    display: block !important;
+  }
   .header {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -551,7 +567,7 @@ body {
   position: absolute;
   top: 100px;
   left: 80px;
-  z-index: 10;
+  z-index: 2;
 }
 
 .hero___title {
