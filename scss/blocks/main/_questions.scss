@@ -11,6 +11,7 @@
 .accordion-wrap {
     padding: 30px 0 30px 0;
     display: flex;
+    cursor: pointer;
     align-items: center;
     border-top: 1px solid #cacaca;
 }
@@ -29,9 +30,75 @@
     font-size: 16px;
     line-height: 32px;
 }
+
+// .accordion-wrap.ui-accordion-selected h3.accordion__title {
+//     background: #025185;
+// }
+// .accordion-wrap.ui-state-hover h3.accordion__title {
+//     background: #025185;
+// }
+// .accordion-wrap.ui-state-hover p.accordion__text {
+//     background: #025185;
+// }
+
+// .accordion-wrap.ui-state-hover .accordion__title {
+//     color: #ff9900;
+//     background-color: blueviolet;
+// }
+// .accordion-wrap.ui-state-hover .accordion__desc {
+//     color: #ff9900;
+//     border-top: 1px solid #ff9900;
+// }
+// .accordion-wrap.ui-accordion-content-active .accordion__title {
+//     color: #ff9900;
+// }
 .accordion__text {
     margin-bottom: 30px;
 }
 .accordion__text:last-child {
     margin-bottom: 40px;
 }
+// ul.accordion li.bg1 {
+//     background-image: url(/img/main/about/about.jpg);
+// }
+
+// ul.accordion li.bg .accordion-wrap {
+//     border-top: 1px solid #ff9900;
+//     border-bottom: 1px solid #ff9900;
+// }
+// ul.accordion li:hover * {
+//     color: #ff9900;
+// }
+// =========================
+
+ul.accordion li:hover {
+    .accordion__title {
+        color: #ff9900;
+    }
+    .accordion__desc {
+        color: #ff9900;
+    }
+    .accordion-wrap {
+        border-top: 1px solid #ff9900;
+        // border-bottom: 1px solid #ff9900;
+    }
+    .bg {
+        border-top: 1px solid #ff9900;
+        border-bottom: 1px solid #ff9900;
+    }
+    .accordion__desc {
+        // border-bottom: 1px solid #ff9900;
+    }
+}
+// ====================
+// ul.accordion li:hover .accordion__title {
+//     color: #ff9900;
+// }
+// ul.accordion li:hover .accordion__desc {
+//     color: #ff9900;
+// }
+
+// ul.accordion li:hover .accordion-wrap {
+//     border-top: 1px solid #ff9900;
+//     // border-bottom: 1px solid #ff9900;
+// }
